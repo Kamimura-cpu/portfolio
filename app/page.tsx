@@ -251,6 +251,16 @@ export default function Home() {
         <p style={{ fontSize: "15px", color: "#666", marginBottom: "48px", lineHeight: 1.9 }}>
           就業・プロジェクト・コラボレーションなどお気軽にどうぞ。
         </p>
+        <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "16px", marginBottom: "40px" }}>
+          <a href="mailto:supaazusaexi@gmail.com"
+            style={{ fontSize: "16px", color: "#111", textDecoration: "none", borderBottom: "1px solid #ccc", paddingBottom: "2px" }}>
+            supaazusaexi@gmail.com
+          </a>
+          <a href="tel:08088801568"
+            style={{ fontSize: "16px", color: "#111", textDecoration: "none", borderBottom: "1px solid #ccc", paddingBottom: "2px" }}>
+            080-8880-1568
+          </a>
+        </div>
         <a href="https://techmate-repair.vercel.app/" target="_blank" rel="noopener noreferrer"
           style={{ padding: "14px 36px", background: "#111", color: "#fff", borderRadius: "4px", textDecoration: "none", fontSize: "14px" }}>
           TechMate から連絡する ↗
