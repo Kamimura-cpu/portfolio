@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Kamimura Koga | Portfolio",
-  description: "上村航我のポートフォリオ - ITコンサル・DX推進・カスタマーエンジニア志望",
+  description: "上村航我のポートフォリオ",
 };
 
 export default function RootLayout({

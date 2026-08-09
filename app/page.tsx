@@ -36,7 +36,7 @@ export default function Home() {
           </h1>
           <p style={{ fontSize: "18px", color: "#888", letterSpacing: "0.1em", marginBottom: "12px" }}>上村 航我</p>
           <p style={{ fontSize: "15px", color: "#666", lineHeight: 1.9, marginBottom: "56px" }}>
-            ITコンサル・DX推進・カスタマーエンジニア志望<br />長野大学 企業情報学部 田中ゼミ / 個人事業主
+            長野大学 企業情報学部 田中ゼミ / 個人事業主
           </p>
           <div style={{ display: "flex", gap: "16px", flexWrap: "wrap" }}>
             <a href="#projects" style={{ padding: "12px 28px", background: "#111", color: "#fff", borderRadius: "4px", textDecoration: "none", fontSize: "14px" }}>Projects</a>
@@ -47,7 +47,11 @@ export default function Home() {
           </div>
         </div>
         <div style={{ flex: "1 1 45%", display: "flex", justifyContent: "flex-end" }}>
-          <HeroIllustration />
+          <img
+            src="/images/profile.png"
+            alt="上村 航我"
+            style={{ width: "320px", height: "320px", maxWidth: "100%", borderRadius: "50%", objectFit: "cover" }}
+          />
         </div>
       </section>
 
@@ -57,6 +61,11 @@ export default function Home() {
       <section id="about" style={sec}>
         <div style={two}>
           <div>
+            <img
+              src="/images/profile.png"
+              alt="上村 航我"
+              style={{ width: "120px", height: "120px", borderRadius: "50%", objectFit: "cover", marginBottom: "24px" }}
+            />
             <p style={eyebrow}>About</p>
             <h2 style={h2}>自己紹介</h2>
           </div>
@@ -66,7 +75,7 @@ export default function Home() {
               ビジネスと技術を両軸で実践しながら、AR開発やローカルLLMの研究にも取り組んでいます。
             </p>
             <p style={{ ...body, marginTop: "16px" }}>
-              ITコンサルタント・DX推進・カスタマーエンジニアとして、現場の課題を技術で解決できる人材を目指しています。
+              課題を発見し、技術とビジネス視点で解決できる人材を目指しています。
             </p>
             <div style={{ marginTop: "48px", display: "flex", gap: "48px" }}>
               {[
@@ -306,37 +315,3 @@ function HobbyCard({ label, slug, color }: { label: string; slug: string; icon: 
   );
 }
 
-function HeroIllustration() {
-  return (
-    <svg width="400" height="360" viewBox="0 0 400 360" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ maxWidth: "100%" }}>
-      {Array.from({ length: 7 }).map((_, r) =>
-        Array.from({ length: 9 }).map((_, c) => (
-          <circle key={`${r}-${c}`} cx={24 + c * 44} cy={24 + r * 48} r="1.5" fill="#e0e0e0" />
-        ))
-      )}
-      <rect x="72" y="96" width="248" height="158" rx="10" fill="#f7f3ff" stroke="#d4bef8" strokeWidth="1.5" />
-      <rect x="84" y="108" width="224" height="134" rx="5" fill="#ede4ff" />
-      <rect x="100" y="122" width="110" height="8" rx="3" fill="#c4a8f0" />
-      <rect x="100" y="138" width="72" height="6" rx="3" fill="#d8c8f8" />
-      <rect x="100" y="154" width="190" height="5" rx="3" fill="#e8e0ff" />
-      <rect x="100" y="166" width="150" height="5" rx="3" fill="#e8e0ff" />
-      <rect x="100" y="178" width="170" height="5" rx="3" fill="#e8e0ff" />
-      <rect x="100" y="196" width="90" height="5" rx="3" fill="#f0c0d8" />
-      <rect x="112" y="208" width="64" height="5" rx="3" fill="#f8d0e4" />
-      <rect x="52" y="256" width="288" height="12" rx="6" fill="#e8e0ff" stroke="#d4bef8" strokeWidth="1" />
-      <rect x="272" y="52" width="112" height="68" rx="8" fill="#eef5ff" stroke="#b8d0f8" strokeWidth="1.2" />
-      <rect x="285" y="67" width="56" height="6" rx="3" fill="#90b4e8" />
-      <rect x="285" y="80" width="38" height="5" rx="3" fill="#c0d8f8" />
-      <circle cx="354" cy="70" r="7" fill="#c0d8f8" />
-      <rect x="16" y="230" width="98" height="58" rx="8" fill="#edfaf3" stroke="#9cd8b8" strokeWidth="1.2" />
-      <rect x="29" y="245" width="46" height="6" rx="3" fill="#60b888" />
-      <rect x="29" y="258" width="30" height="5" rx="3" fill="#a8dcc0" />
-      <circle cx="91" cy="248" r="6" fill="#a8dcc0" />
-      <rect x="326" y="192" width="48" height="82" rx="7" fill="#fff0e8" stroke="#f0c0a0" strokeWidth="1.2" />
-      <rect x="334" y="203" width="32" height="52" rx="3" fill="#ffd8c0" />
-      <rect x="340" y="211" width="20" height="4" rx="2" fill="#e8a070" />
-      <rect x="340" y="220" width="14" height="4" rx="2" fill="#f8c8a8" />
-      <circle cx="350" cy="265" r="4" fill="#f0b898" />
-    </svg>
-  );
-}
